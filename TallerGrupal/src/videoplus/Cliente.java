@@ -31,12 +31,16 @@ public class Cliente {
     public void reproducir(){
             String continuar="no";
             do{
+                while(listaReproduccion.size()>0){
                 Video videoInicial = listaReproduccion.get(0);
                 videoInicial.mostrarInformacion();
                 videoInicial.setNumeroReproducciones(videoInicial.getNumeroReproducciones()+1); 
                 listaReproduccion.remove(0);
-                continuar = sc.nextLine();
+                System.out.print("Desea continuar (si/no):");
+                continuar = sc.nextLine();}
+                System.out.print("Se le acabaron las peliculas");
             }while(continuar.equals("si"));
+            sc.close();
         }
         
 }
