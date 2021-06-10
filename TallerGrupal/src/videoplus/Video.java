@@ -30,4 +30,21 @@ public class Video {
         }
         return false;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setNumeroReproducciones(int numeroReproducciones) {
+        this.numeroReproducciones = numeroReproducciones;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getNumeroReproducciones() {
+        return numeroReproducciones;
+    }
+    
 }
